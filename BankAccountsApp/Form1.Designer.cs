@@ -46,75 +46,78 @@
             label1.Location = new Point(14, 21);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(74, 30);
+            label1.Size = new Size(95, 37);
             label1.TabIndex = 0;
             label1.Text = "Owner";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(0, 290);
+            label2.Location = new Point(-3, 277);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(88, 30);
+            label2.Size = new Size(112, 37);
             label2.TabIndex = 1;
             label2.Text = "Amount";
+            label2.Click += label2_Click;
             // 
             // OwnerTxt
             // 
-            OwnerTxt.Location = new Point(96, 21);
+            OwnerTxt.Location = new Point(111, 21);
             OwnerTxt.Name = "OwnerTxt";
-            OwnerTxt.Size = new Size(160, 35);
+            OwnerTxt.Size = new Size(235, 42);
             OwnerTxt.TabIndex = 2;
             // 
             // AmountNum
             // 
-            AmountNum.Location = new Point(96, 288);
+            AmountNum.Location = new Point(117, 277);
             AmountNum.Name = "AmountNum";
-            AmountNum.Size = new Size(154, 35);
+            AmountNum.Size = new Size(160, 42);
             AmountNum.TabIndex = 3;
             // 
             // BankAccountsGrid
             // 
+            BankAccountsGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BankAccountsGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            BankAccountsGrid.Location = new Point(277, 21);
+            BankAccountsGrid.Location = new Point(352, 12);
             BankAccountsGrid.Name = "BankAccountsGrid";
-            BankAccountsGrid.Size = new Size(353, 245);
+            BankAccountsGrid.RowHeadersWidth = 51;
+            BankAccountsGrid.Size = new Size(467, 245);
             BankAccountsGrid.TabIndex = 4;
             // 
             // button1
             // 
-            button1.Location = new Point(277, 272);
+            button1.Location = new Point(352, 263);
             button1.Name = "button1";
-            button1.Size = new Size(170, 51);
+            button1.Size = new Size(247, 51);
             button1.TabIndex = 5;
             button1.Text = "Deposit";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(453, 272);
+            button2.Location = new Point(605, 263);
             button2.Name = "button2";
-            button2.Size = new Size(177, 51);
+            button2.Size = new Size(209, 51);
             button2.TabIndex = 6;
             button2.Text = "Withdraw";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(96, 62);
+            button3.Location = new Point(111, 91);
             button3.Name = "button3";
-            button3.Size = new Size(160, 48);
+            button3.Size = new Size(235, 48);
             button3.TabIndex = 7;
             button3.Text = "create account";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(14F, 36F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(635, 329);
+            ClientSize = new Size(826, 329);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
