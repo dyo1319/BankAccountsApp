@@ -59,7 +59,6 @@
             label2.Size = new Size(112, 37);
             label2.TabIndex = 1;
             label2.Text = "Amount";
-            label2.Click += label2_Click;
             // 
             // OwnerTxt
             // 
@@ -93,6 +92,7 @@
             button1.TabIndex = 5;
             button1.Text = "Deposit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += DepositBtn_Click;
             // 
             // button2
             // 
@@ -102,6 +102,7 @@
             button2.TabIndex = 6;
             button2.Text = "Withdraw";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += WithdrawBtn_Click;
             // 
             // button3
             // 
@@ -111,7 +112,7 @@
             button3.TabIndex = 7;
             button3.Text = "create account";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += CreateAccountBtn_Click;
             // 
             // Form1
             // 
